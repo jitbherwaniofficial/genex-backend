@@ -10,8 +10,12 @@ var corsOptions = {
 PORT = process.env.PORT || 3000
 uri = process.env.uri
 
+var corsOptions = {
+    origin: 'https://jitbherwaniofficial.github.io/genex-project',
+}
+
 const app = express();
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use("/user",userRoute)
