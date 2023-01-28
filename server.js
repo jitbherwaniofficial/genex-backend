@@ -14,7 +14,7 @@ var corsOptions = {
     origin:"https://genex.onrender.com"
 }
 const app = express();
-app.use(cors())
+app.use(cors(corsOptions))
 // app.use(cors({
 //     origin: 'https://genex.onrender.com/', // use your actual domain name (or localhost), using * is not recommended
 //     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
