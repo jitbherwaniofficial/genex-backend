@@ -6,6 +6,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 
+
 router.get("/", (req, res) => {
     User.find()
         .then(result => {
