@@ -11,7 +11,7 @@ PORT = process.env.PORT || 3000
 uri = process.env.uri
 
 var corsOptions = {
-    origin:"https://onrender.com"
+    origin:"https://genex.onrender.com"
 }
 const app = express();
 app.use(cors())
