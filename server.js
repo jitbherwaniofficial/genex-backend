@@ -10,7 +10,9 @@ var corsOptions = {
 PORT = process.env.PORT || 3000
 uri = process.env.uri
 
-
+var corsOptions = {
+    origin:"https://onrender.com"
+}
 const app = express();
 app.use(cors())
 // app.use(cors({
@@ -19,7 +21,7 @@ app.use(cors())
 //     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
 //     credentials: true
 // }))
-app.use(express.json())
+app.use(express.json(corsOptions))
 app.use(express.urlencoded({extended:false}))
 app.use("/user",userRoute)
 
