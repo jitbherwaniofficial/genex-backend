@@ -11,7 +11,7 @@ PORT = process.env.PORT || 3000
 uri = process.env.uri
 
 var corsOptions = {
-    origin: 'https://jitbherwaniofficial.github.io/genex-project',
+    origin: 'https://genex.onrender.com/',
 }
 
 const app = express();
