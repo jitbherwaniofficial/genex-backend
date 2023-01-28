@@ -12,7 +12,7 @@ uri = process.env.uri
 
 
 const app = express();
-app.use(cors({origin:"*"}))
+app.use(cors({origin:"*",credentials:true,optionsSuccessStatus:200}))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use("/user",userRoute)
