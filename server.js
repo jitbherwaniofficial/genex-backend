@@ -15,7 +15,7 @@ uri = process.env.uri
 //     origin:["https://genex.onrender.com/login","https://genex.onrender.com/signup"]
 // }
 app.use(cors())
-app.options('*',cors());
+// app.options('*',cors());
 // app.use(cors({
 //     origin: '*', // use your actual domain name (or localhost), using * is not recommended
 //     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
