@@ -9,8 +9,6 @@ PORT = process.env.PORT || 3000
 uri = process.env.uri
 app.use(cors())
 
-
-
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use("/user",userRoute)
