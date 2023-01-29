@@ -7,9 +7,7 @@ const cors = require("cors");
 
 PORT = process.env.PORT || 3000
 uri = process.env.uri
-app.use(cors({
-    origin:"https://jitbherwaniofficial.github.io/login"
-}))
+app.use(cors())
 
 
 
