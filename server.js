@@ -11,14 +11,14 @@ PORT = process.env.PORT || 3000
 uri = process.env.uri
 
 var corsOptions = {
-    origin:"https://genex.onrender.com"
+    origin:["https://genex.onrender.com/login","https://genex.onrender.com/signup"]
 }
 const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use("/user",userRoute)
 app.use(cors())
-app.options('*',cors());
+// app.options('*',cors());
 // app.use(cors({
 //     origin: '*', // use your actual domain name (or localhost), using * is not recommended
 //     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
