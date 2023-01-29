@@ -11,22 +11,6 @@ app.use(cors({
     origin:"https://genex.onrender.com"
 }))
 
-// app.use(function(req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "https://genex.onrender.com");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-//   });
-
-// var corsOptions = {
-//     origin:["https://genex.onrender.com/login","https://genex.onrender.com/signup"]
-// }
-// app.use(cors(corsOptions))
-// app.use(cors({
-//     origin: '*', // use your actual domain name (or localhost), using * is not recommended
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
-//     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
-//     credentials: true
-// }))
 
 
 app.use(express.json())
