@@ -9,7 +9,7 @@ PORT = process.env.PORT || 3000
 uri = process.env.uri
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", ["https://genex.onrender.com/login","https://genex.onrender.com/signup"]);
+    res.header("Access-Control-Allow-Origin", ["https://genex.onrender.com"]);
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
