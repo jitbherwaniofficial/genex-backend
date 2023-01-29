@@ -7,8 +7,9 @@ const cors = require("cors");
 
 PORT = process.env.PORT || 3000
 uri = process.env.uri
-app.use(cors())
-app.options('*',cors());
+app.use(cors({
+    origin:"https://genex.onrender.com"
+}))
 
 // app.use(function(req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "https://genex.onrender.com");
