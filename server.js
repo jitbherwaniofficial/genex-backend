@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const userRoute = require("./routes/users");
 const app = express();
-// const cors = require("cors");
+const cors = require("cors");
 
 PORT = process.env.PORT || 3000
 uri = process.env.uri
+app.use(cors())
+app.options('*',cors());
 
 // app.use(function(req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "https://genex.onrender.com");
@@ -18,7 +20,6 @@ uri = process.env.uri
 //     origin:["https://genex.onrender.com/login","https://genex.onrender.com/signup"]
 // }
 // app.use(cors(corsOptions))
-// app.options('*',cors());
 // app.use(cors({
 //     origin: '*', // use your actual domain name (or localhost), using * is not recommended
 //     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
