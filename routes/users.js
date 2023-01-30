@@ -22,6 +22,7 @@ router.get("/", (req, res) => {
         })
 })
 
+
 router.get("/:id", (req, res) => {
     User.findById(req.params.id)
         .then(result => {
