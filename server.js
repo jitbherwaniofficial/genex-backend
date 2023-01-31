@@ -7,7 +7,6 @@ const cors = require("cors");
 
 PORT = process.env.PORT || 3000
 uri = process.env.uri
-// app.use(cors({origin:"http://localhost:4200"}))
 
 function myCors(req, res, nxt) {
     res.header('Access-Control-Allow-Origin', 'https://jitbherwaniofficial.github.io');
@@ -20,7 +19,6 @@ function myCors(req, res, nxt) {
         nxt();
     }
 }
-
 
 app.use(myCors)
 
