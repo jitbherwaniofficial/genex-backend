@@ -10,7 +10,7 @@ uri = process.env.uri
 // app.use(cors({origin:"http://localhost:4200"}))
 
 function myCors(req, res, nxt) {
-    res.header('Access-Control-Allow-Origin', 'https://jitbherwaniofficial.github.io/genex-project/login');
+    res.header('Access-Control-Allow-Origin', 'https://jitbherwaniofficial.github.io/genex-project');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Origin, Content-Type, Accept, Accept-Language, Origin, User-Agent');
     if(req.method === 'OPTIONS') {
