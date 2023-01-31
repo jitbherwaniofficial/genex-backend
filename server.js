@@ -21,6 +21,7 @@ function myCors(req, res, nxt) {
     }
 }
 
+
 app.use(myCors)
 
 app.use(express.json())
